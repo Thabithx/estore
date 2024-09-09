@@ -1,0 +1,299 @@
+body {
+   margin: 0px;
+   font-family: 'SamsungSharpSans', arial, sans-serif;
+   background-color: #fff;
+}
+
+#header {
+   background-color: rgba(231, 231, 231, 0.364);
+   height: 80px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+.headerSection{
+   display: flex;
+   justify-content: center;
+   align-items:center;
+}
+
+#logoDiv {
+   flex: 0.6;
+   min-width: 200px; 
+}
+
+#logoDiv img {
+   width: 67%;
+   height: 45%;
+   object-fit: cover;
+   
+}
+
+#searchDiv {
+   flex: 2;
+   padding: 5px 10px;
+   
+}
+
+#backgroundDiv {
+   flex: 1;
+   background-color: white;
+   display: flex;
+   align-items: center;
+   border-radius: 50px;
+   padding-left: 20px;
+   padding-right: 5px;
+   max-width: 700px;
+   
+}
+
+#searchBox {
+   flex: 1;
+   height: 42px;
+   border: none;
+   outline: none;
+   font-size: 16px;
+   color: #000000;
+}
+
+#submitButton {
+   border-radius: 20px;
+   border: none;
+   outline: none;
+   background-color: #ffffff;
+   color: #000000;
+   height: 35px;
+   width: 60px;
+}
+
+#submitButton .fa-solid {
+   
+   font-size: 18px;
+}
+
+
+#otherButtons {
+   flex: 0.6;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+#accountDiv {
+   flex: 1;
+}
+
+#accountDiv .fa-solid {
+   font-size: 27px;
+}
+
+#cartDiv {
+   flex: 1;
+}
+
+#cartDiv .fa-solid {
+   font-size: 27px;
+}
+
+#menuDiv {
+   flex: 1;
+}
+
+#menuDiv .fa-solid {
+   font-size: 27px;
+}
+
+
+
+
+
+
+#carouselDiv {
+   height: 400px;
+   
+}
+
+#slidesDiv {
+   height: 400px;
+}
+
+.slides {
+   position: relative;
+   height: 400px; 
+   
+}
+
+#text1 {
+   position: absolute;
+   font-size: 43px;
+   top: 25px;
+   right: 100px;
+   color: #bbbbbb;
+}
+
+#text2 {
+   position: absolute;
+   font-size: 50px;
+   top: 75px;
+   right: 100px;
+   color: #ffffff;
+}
+
+#button {
+   position: absolute;
+   top: 210px;
+   right: 100px; 
+   padding: 10px 17px;
+   font-size: 16px;
+   border-radius: 20px;
+   font-weight: 700;
+   border: none;
+   outline: none;
+}
+
+.next {
+   position: absolute;
+   top: 240px;
+   right: 10px;
+   border: none;
+   background-color: #00000000;
+   color: rgba(255, 255, 255, 0.641);
+   font-size: 25px;
+}
+
+.prev {
+   position: absolute;
+   top: 240px; 
+   left: 10px;
+   border: none;
+   background-color: #00000000;
+   color: rgba(255, 255, 255, 0.641);
+   font-size: 25px;
+}
+
+#img2 {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: center;
+   
+}
+
+#categoryText {
+   text-align: center;
+   margin: 40px 0px;
+   font-family: 'SamsungSharpSans', arial, sans-serif;
+   font-size: 38px;
+   font-weight: bold;
+}
+
+#categoryDiv {
+   height: 180px;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+   grid-template-rows: 180px;
+   gap: 20px;
+   padding: 0px 30px;
+}
+
+.categoryImages {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 15px;
+}
+
+#featuresDiv {
+   height: 100px;
+   padding: 55px 30px;
+}
+
+
+#featuresImg {
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+   
+}
+
+#productDiv {
+   height: 300px;
+   padding: 0px 30px;
+   position: relative;
+}
+
+#featuredimg {
+   
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+   border-radius: 20px;
+}
+
+#featuredTextDiv {
+   position: absolute;
+   top: 0px;
+   right: 200px;
+}
+
+#featuredProductText {
+   color: #fff;
+   font-size: 50px;
+   margin: 35px 0px;
+   font-weight: 700;
+}
+
+#featuredProductButton {
+   padding: 10px 17px;
+   font-size: 16px;
+   border-radius: 20px;
+   font-weight: 700;
+   border: none;
+   outline: none;
+}
+
+.links {
+   color: #000000;
+}
+
+#footer {
+   background-color: #f0f0f0;
+   font-size: 13px;
+   
+}
+
+#infoDiv {
+   padding-top: 50px;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   margin-left: 140px;
+   margin-top: 50px;
+}
+
+.title {
+   font-size: 15px;
+   font-weight: 600;
+}
+
+#helpDiv {
+   margin-top: 15px;
+}
+
+#copyrightDiv {
+   padding-top: 100px;
+   padding-bottom: 50px;
+   text-align: center;
+}
+
+
+
+
+
+
+
+@media (max-width: 950px) {
+   #searchDiv {
+      display: none;
+   }
+}
