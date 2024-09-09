@@ -195,6 +195,7 @@ body {
    grid-template-rows: 180px;
    gap: 20px;
    padding: 0px 30px;
+   
 }
 
 .categoryImages {
@@ -202,11 +203,32 @@ body {
    height: 100%;
    object-fit: cover;
    border-radius: 15px;
+   filter: brightness(0.5);
+}
+
+.categoryDivs {
+   width: 100%;
+   height: 100%;
+   position: relative;
+}
+
+.categorytext {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   font-size: 20px;
+   color: white;
+   font-size: 30px;
+   margin: 0px 0px;
+   text-align: center;
+   font-weight: 700;
 }
 
 #featuresDiv {
    height: 100px;
    padding: 55px 30px;
+   
 }
 
 
