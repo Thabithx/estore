@@ -19,8 +19,7 @@ body {
 }
 
 #logoDiv {
-   flex: 0.6;
-   min-width: 200px; 
+   flex: 0.6;   
 }
 
 #logoDiv img {
@@ -68,7 +67,6 @@ body {
 }
 
 #submitButton .fa-solid {
-   
    font-size: 18px;
 }
 
@@ -78,6 +76,7 @@ body {
    display: flex;
    flex-direction: row;
    justify-content: space-between;
+   gap: 2%;
 }
 
 #accountDiv {
@@ -127,25 +126,25 @@ body {
 #text1 {
    position: absolute;
    font-size: 43px;
-   top: 25px;
-   right: 100px;
+   top: 9%;
+   right: 6%;
    color: #bbbbbb;
 }
 
 #text2 {
    position: absolute;
    font-size: 50px;
-   top: 75px;
-   right: 100px;
+   top: 22%;
+   right: 6%;
    color: #ffffff;
 }
 
 #button {
+   top: 55%;
    position: absolute;
-   top: 210px;
-   right: 100px; 
+   right: 6%; 
    padding: 10px 17px;
-   font-size: 16px;
+   font-size: 17px;
    border-radius: 20px;
    font-weight: 700;
    border: none;
@@ -194,7 +193,8 @@ body {
    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
    grid-template-rows: 180px;
    gap: 20px;
-   padding: 0px 30px;
+   padding:0px 30px;
+   margin-bottom: 40px;
    
 }
 
@@ -202,7 +202,7 @@ body {
    width: 100%;
    height: 100%;
    object-fit: cover;
-   border-radius: 15px;
+   border-radius: 8%;
    filter: brightness(0.5);
 }
 
@@ -217,7 +217,6 @@ body {
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
-   font-size: 20px;
    color: white;
    font-size: 30px;
    margin: 0px 0px;
@@ -225,7 +224,7 @@ body {
    font-weight: 700;
 }
 
-#featuresDiv {
+#featuresDiv { 
    height: 100px;
    padding: 55px 30px;
    
@@ -235,7 +234,7 @@ body {
 #featuresImg {
    height: 100%;
    width: 100%;
-   object-fit: cover;
+   object-fit: contain;
    
 }
 
@@ -246,7 +245,7 @@ body {
 }
 
 #featuredimg {
-   
+   margin-top: 10px;
    height: 100%;
    width: 100%;
    object-fit: cover;
@@ -256,7 +255,7 @@ body {
 #featuredTextDiv {
    position: absolute;
    top: 0px;
-   right: 200px;
+   right: 10%;
 }
 
 #featuredProductText {
@@ -289,8 +288,8 @@ body {
    padding-top: 50px;
    display: grid;
    grid-template-columns: 1fr 1fr 1fr 1fr;
-   margin-left: 140px;
-   margin-top: 50px;
+   margin-left: 8%;
+   margin-top: 5%;
 }
 
 .title {
@@ -312,10 +311,248 @@ body {
 
 
 
+@media (max-width: 1250px) {
+   #text1 {
+      font-size: 41px;
+   }
 
+   #text2{
+      font-size: 39px;
+      
+   }
+
+   #featuredProductText {
+      font-size: 41px
+   }
+
+   #categoryText{
+      font-size: 30px;
+      margin-top: 60px;
+      margin-bottom: 30px;
+   }
+
+   .categorytext {
+      font-size: 160%;
+   }
+
+   .categoryDivs {
+      height: 80%;
+   }  
+   
+} 
 
 @media (max-width: 950px) {
    #searchDiv {
-      display: none;
+      flex: 1 ;
+   }
+
+   #text1 {
+      font-size: 35px;
+      top: 15%;
+   }
+
+   #text2{
+      font-size: 36px;
+      top: 28%;
+   }
+
+   #featuredProductText {
+      font-size: 34px
+   }
+
+   #featuredProductButton { 
+      font-size: 15px;
+   }
+
+   #button{
+      top: 55%;
+   }
+   
+   #categoryText{
+      font-size: 30px;
+      margin: 30px 0px;
+      padding-top: 30px;
+   }
+
+   .categorytext {
+      font-size: 140%;
+      
+   }
+
+   #categoryDiv {
+      height: 150px;
+      padding: 0px 30px;
+   }
+
+   .categoryDivs {
+      height: 65%;
+      
+   }
+
+   #featuresDiv {
+      height: 100px;
+      padding: 0px 30px;
+      padding-bottom: 30px;
+   }
+
+
+}
+
+@media (max-width: 870px){
+
+   #text1 {
+      font-size: 30px;
+      top: 20%;
+   }
+
+   #text2{
+      font-size: 32px;
+      top: 31%;
+   }
+
+   #featuredProductText {
+      font-size: 31px
+   }
+
+   #featuredProductButton { 
+      font-size: 12px;
+   }
+
+   #button{
+      top: 58%;
+      font-size: 14px;
+   }
+   
+   #categoryText{
+      font-size: 26px;
+      margin: 30px 0px;
+   }
+
+   .categorytext {
+      font-size: 120%;
+   }
+
+   #categoryDiv {
+      height: 140px;
+      
+   }
+   
+   .categoryDivs {
+      height: 60%;
+
+   }
+
+
+   #featuresDiv {
+      height: 100px;
+      padding-top: 0px;
+      padding-bottom: 20px;
+      
+   }
+
+   #infoDiv {
+      margin-left: 6%;
+   }
+}
+
+@media (max-width: 730px){
+
+   #featuredProductText {
+      font-size: 160%;
+   }
+
+   #featuredProductButton { 
+      font-size: 13px;
+   }
+
+   #button{
+      top: 58%;
+      font-size: 13px;
+   }
+   
+   #categoryText{
+      font-size: 24px;
+      margin: 30px 0px;
+   }
+
+   .categorytext {
+      font-size: 100%;
+   }
+
+   #categoryDiv {
+      height: 110px;
+      
+   }
+   
+   .categoryDivs {
+      height: 50%;
+
+   }
+
+   #infoDiv {
+      margin-left: 5%;
+   }
+}
+
+@media (max-width: 660px){
+
+   #text1 {
+      font-size: 180%;
+      top: 22%;
+   }
+
+   #text2{
+      font-size: 200%;
+      top: 32%;
+   }
+
+   #featuredProductText {
+      font-size: 160%;
+   }
+
+   #featuredProductButton { 
+      font-size: 12px;
+   }
+
+   #button{
+      top: 58%;
+      font-size: 12px;
+   }
+   
+   #categoryText{
+      font-size: 24px;
+      margin: 30px 0px;
+   }
+
+   .categorytext {
+      font-size: 80%;
+   }
+
+   #categoryDiv {
+      height: 90px;
+      
+   }
+   
+   .categoryDivs {
+      height: 40%;
+
+   }
+
+   #infoDiv {
+      margin-left: 5%;
+   }
+
+   }
+
+
+   #featuresDiv {
+      height: 100px;
+      padding-top: 0px;
+      padding-bottom: 20px;
+      
+   }
+
+   #infoDiv {
+      margin-left: 6%;
    }
 }
