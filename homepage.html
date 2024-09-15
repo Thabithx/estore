@@ -25,11 +25,22 @@
          <div id="cartDiv" class="headerSection">
             <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i>
          </div>
-         <div id="menuDiv" class="headerSection">
+         <div id="menuDiv" onclick=showMenu() class="headerSection">
             <i class="fa-solid fa-bars" style="color: #000000;"></i>
          </div>
       </div>
    </div>  
+   
+   <menu id="menu">
+      <ul>
+         <li onclick=hideMenu()><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
+         <li>Store</li>
+         <li>Categories</li>
+         <li>Track Order</li>
+         <li>Help</li>
+         <li>Sign In</li>
+      </ul>
+   </menu>
 
    <div id="body">
       <div id="carouselDiv">
