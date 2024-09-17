@@ -81,18 +81,23 @@ body {
 
 #accountDiv {
    flex: 1;
+   cursor: pointer;
 }
 
 #accountDiv .fa-solid {
    font-size: 27px;
+
 }
 
 #cartDiv {
    flex: 1;
+   cursor: pointer;
+
 }
 
 #cartDiv .fa-solid {
    font-size: 27px;
+   cursor: pointer;
 }
 
 #menuDiv {
@@ -123,12 +128,85 @@ body {
    justify-content: flex-start;
    padding-left: 3%;
    font-size: 120%;
-   
 }
 
-#closeMenuIcon{
-   text-align: right;
+a {
+   text-align: center;
+}
 
+#cart{
+   background-color: #fff;
+   margin: 0px 0px;
+   font-size: 120%;
+}
+
+#account{
+   position: fixed; 
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%); 
+   width: 100vw;
+   height: 100vh;
+   background-color: rgba(7, 7, 7, 0.6);
+   color: white;
+   backdrop-filter: blur(10px);
+   z-index: 999;
+   margin: 0px 0px;
+   box-shadow: -10px 0 10px rgb(0, 0, 0, 0.1);
+   display: none;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+#protection{
+   margin: 0;
+   text-align: center;
+}
+
+#sign-in-input {
+   width: 25%;
+   height: 6%;
+   border-radius: 8px;
+   padding: 1px 10px;
+   margin-top: 3%;
+   margin-bottom: 2%;
+   border: none;
+   outline: none;
+}
+
+#closeIcon {
+   position: fixed;
+   top: 2%;
+   right: 2%;
+   cursor: pointer;
+}
+
+#continueButton {
+   width: 26%;
+   height: 6%;
+   border-radius: 20px;
+   margin-bottom: 5%;
+   border: none;
+   outline: none;
+} 
+
+.accLink {
+   color: white;
+   font-size: small;
+}
+
+#agreeText {
+   font-size: small;
+   text-align: center;
+}
+
+#cartBodyDiv{
+   text-align: center;
+}
+
+#cartTitleDiv{
+   padding-left: 15%;
 }
 
 ul {
@@ -147,8 +225,6 @@ li {
 a {
    width: 100%;
 }
-
-
 
 
 
@@ -320,6 +396,7 @@ a {
 
 .links {
    color: #000000;
+   text-decoration: none;
 }
 
 #footer {
@@ -341,9 +418,6 @@ a {
    font-weight: 600;
 }
 
-#helpDiv {
-   margin-top: 15px;
-}
 
 #copyrightDiv {
    padding-top: 100px;

@@ -8,39 +8,8 @@
    <script src="https://kit.fontawesome.com/3fe5d57541.js" crossorigin="anonymous"></script>
 </head>
 <body>
-   <div id="header">
-      <div id="logoDiv" class="headerSection">
-         <img src="images/logo.png" alt="site-logo">
-      </div>
-      <div id="searchDiv" class="headerSection">
-         <div id="backgroundDiv">
-            <input type="text" id="searchBox" placeholder="Search for products..." >
-            <button id="submitButton" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-         </div>
-      </div>
-      <div id="otherButtons">
-         <div id="accountDiv" class="headerSection">
-            <i class="fa-solid fa-user" style="color: #000000;"></i>
-         </div>
-         <div id="cartDiv" class="headerSection">
-            <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i>
-         </div>
-         <div id="menuDiv" onclick=showMenu() class="headerSection">
-            <i class="fa-solid fa-bars" style="color: #000000;"></i>
-         </div>
-      </div>
-   </div>  
-   
-   <menu id="menu">
-      <ul>
-         <li onclick=hideMenu()><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
-         <li>Store</li>
-         <li>Categories</li>
-         <li>Track Order</li>
-         <li>Help</li>
-         <li>Sign In</li>
-      </ul>
-   </menu>
+     
+   <my-header></my-header>
 
    <div id="body">
       <div id="carouselDiv">
@@ -104,44 +73,8 @@
       </div>
    </div>
 
-   <div id="footer">
-      <div id="infoDiv">
-         <div class="subFooterDivs" id="aboutDiv">
-               <p class="title">About</p>
-               <p>Company info</p>
-               <p>News</p>
-               <p>Government relations</p>
-               <p>Policies</p>
-               <p>Advertise with us</p>
-         </div>
-
-         <div class="subFooterDivs" id="payDiv">
-            <p class="title">Buy</p>
-            <p><a href="" class="links">Registration</a></p>
-            <p><a href="" class="links">eBay Money Back Guarantee</a></p>
-            <p><a href="" class="links">Bidding & buying help</a></p>
-            <p><a href="" class="links">Stores</a></p>
-         </div>
-         <div class="subFooterDivs" id="socailDiv">
-            <p class="title">Social Media</p>
-            <p><a href="" class="links">Facebook</a></p>
-            <p><a href="" class="links">Twitter</a></p>
-            <p><a href="" class="links">Instagram</a></p>
-            <p><a href="" class="links">Tiktok</a></p>
-         </div>
-         <div class="subFooterDivs" id="helpDiv">
-            <p class="title">Help & Contact</p>
-            <p>Seller Information Center</p>
-            <p>Contact us</p>
-         </div>
-         
-      </div>
-
-      <div id="copyrightDiv">
-         Copyright© 1995-2024 E-Store All Rights Reserved.
-      </div>
-
-   </div>
+   <my-footer></my-footer>
+   
 
    <script src="script.js"></script>
 </body>
