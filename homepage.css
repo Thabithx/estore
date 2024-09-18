@@ -67,7 +67,7 @@ body {
 }
 
 #submitButton .fa-solid {
-   font-size: 18px;
+   font-size: 15px;
 }
 
 
@@ -118,7 +118,7 @@ body {
    height: 100vh;
    background-color: rgba(7, 7, 7, 0.6);
    color: white;
-   backdrop-filter: blur(10px);
+   backdrop-filter: blur(10px);  
    z-index: 999;
    margin: 0px 0px;
    box-shadow: -10px 0 10px rgb(0, 0, 0, 0.1);
@@ -234,12 +234,12 @@ a {
 }
 
 #slidesDiv {
-   height: 400px;
+   height: 100%;
 }
 
 .slides {
    position: relative;
-   height: 400px; 
+   height: 100%; 
    
 }
 
@@ -273,7 +273,7 @@ a {
 
 .next {
    position: absolute;
-   top: 240px;
+   top: 35%;
    right: 10px;
    border: none;
    background-color: #00000000;
@@ -283,7 +283,7 @@ a {
 
 .prev {
    position: absolute;
-   top: 240px; 
+   top: 35%; 
    left: 10px;
    border: none;
    background-color: #00000000;
@@ -524,14 +524,18 @@ a {
 
 @media (max-width: 870px){
 
+   #carouselDiv{
+      height: 300px;
+   }
+
    #text1 {
       font-size: 30px;
-      top: 20%;
+      top: 10%;
    }
 
    #text2{
       font-size: 32px;
-      top: 31%;
+      top: 23%;
    }
 
    #featuredProductText {
@@ -543,13 +547,15 @@ a {
    }
 
    #button{
-      top: 58%;
-      font-size: 14px;
+      top: 55%;
+      font-size: 13px;
+      padding: 8px 14px;
    }
    
    #categoryText{
       font-size: 26px;
-      margin: 30px 0px;
+      margin: 10px 0px;
+      margin-bottom: 20px;
    }
 
    .categorytext {
@@ -581,6 +587,20 @@ a {
 
 @media (max-width: 730px){
 
+   #carouselDiv{
+      height: 300px;
+   }
+
+   #text1 {
+      font-size: 30px;
+      top: 10%;
+   }
+
+   #text2{
+      font-size: 32px;
+      top: 23%;
+   }
+
    #featuredProductText {
       font-size: 160%;
    }
@@ -596,7 +616,7 @@ a {
    
    #categoryText{
       font-size: 24px;
-      margin: 30px 0px;
+      margin: 20px 0px;
    }
 
    .categorytext {
@@ -619,6 +639,9 @@ a {
 }
 
 @media (max-width: 660px){
+   #carouselDiv{
+      height: 300px;
+   } 
 
    #text1 {
       font-size: 180%;
@@ -679,3 +702,127 @@ a {
    #infoDiv {
       margin-left: 6%;
    }
+
+
+   @media (max-width: 600px){
+
+      #carouselDiv{
+         height: 220px;
+      } 
+
+      #header{
+         height: 50px;
+         
+      }
+
+      #searchBox {
+         height: 30px;
+         font-size: 13px;
+      }
+
+      #backgroundDiv{
+         height: 32px;
+      }
+
+      #submitButton{
+         height: 32px;
+      }
+
+      #text1 {
+         font-size: 150%;
+         top: 15%;
+      }
+   
+      #text2{
+         font-size: 160%;
+         top: 27%;
+      }
+
+      #button{
+         top: 55%;
+         font-size: 10px;
+      }
+
+      #accountDiv .fa-solid {
+         font-size: 20px;
+      }
+      
+      #cartDiv .fa-solid {
+         font-size: 20px;
+      }
+
+      #menuDiv .fa-solid {
+         font-size: 20px;
+      }
+
+      .next {
+         top: 25%;
+         font-size: 20px;
+      }
+      
+      .prev {
+
+         top: 25%; 
+         font-size: 20px;
+      }
+
+      #categoryText{
+         font-size: 18px;
+         margin: 20px 0px;
+         padding-top: 0px;
+         margin-top: 30px;
+      }
+      
+      #featuresDiv{
+         padding-bottom: 0px;
+      }
+
+      #categoryDiv{
+         gap: 10px;
+         height: 72px;
+         padding: 0px 20px;
+      }
+
+      #featuresDiv{
+         height: 80px;
+         padding: 0px 20px;
+      }
+
+      #featuredimg{
+         margin-top: 0px;
+      }
+
+      #productDiv{
+         height: 200px;
+         padding: 0px 20px;
+      }
+
+      #featuredProductText {
+         font-size: 140%;
+         margin: 20px 0px;
+      }
+
+      #featuredProductButton{ 
+         font-size: 10px;
+         padding: 8px 14px;
+      }
+
+      #footer{
+         font-size: 9px;
+      }
+
+      .title {
+         font-size: 11px;
+      }
+
+      #infoDiv{
+         padding-top: 20px;
+      }
+
+      #copyrightDiv{
+         padding-top: 50px;
+         padding-bottom: 25px;
+      }
+   }
+
+
