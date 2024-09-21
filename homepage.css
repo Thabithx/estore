@@ -71,6 +71,8 @@ body {
 }
 
 
+
+
 #otherButtons {
    flex: 0.6;
    display: flex;
@@ -826,3 +828,123 @@ a {
    }
 
 
+   @media (max-width: 490px){
+
+      #header {
+         display: flex;
+         align-items: center;
+         padding-right: 20px;
+       }
+       
+       #logoDiv {
+         display: flex;
+         justify-content: flex-start;
+         margin-left: 20px;
+       }
+
+       #otherButtons{
+         display: flex;
+         align-items: center;
+         justify-content: flex-end;
+       }
+
+      #featuredTextDiv{
+         right: 7%;
+      } 
+
+      #text1 {
+         font-size: 150%;
+         top: 13%;
+         right: 10%;
+      }
+   
+      #text2{
+         font-size: 160%;
+         top: 25%;
+         right: 10%;
+      }
+
+      #button{
+         top: 55%;
+         right: 10%;
+         font-size: 10px;
+      }
+
+      #categoryDiv{
+         height: 62px;
+         padding: 0px 20px;
+      }
+
+      .categoryDivs{
+         height: 62px;
+      }
+
+
+      #featuredTextDiv{
+         right: 8%;
+      }
+      #featuredProductText{
+         font-size: 120%;
+      }
+
+      #featuredProductButton{
+         padding: 6px 12px;
+         font-size: 10px;
+      }
+
+      #categoryText{
+         margin-top: 25px;
+         margin-bottom: 15px;    
+      }
+
+      #img2{
+         filter: brightness(0.7);
+      }
+
+      .title{
+         font-size: 10px;
+      }
+      #footer{
+         font-size: 8px;
+      }
+
+      #infoDiv{
+         gap: 4px;
+         margin-left: 15px;
+      }
+
+      #searchDiv{
+         display: none;
+      }
+
+      #mobileSearchBarDiv{
+         padding: 5px 10px;
+      }
+
+      #headerAndMobileSearch{
+         display: flex;
+         flex-direction: column;
+      }
+
+      #logoDiv img {
+         width: 50%;
+         height: 100%;
+         object-fit: cover;
+         
+      }
+
+      #logoDiv {
+         height: 50px;
+      }
+
+      #backgroundDiv{
+         padding-right: 0px;
+      }
+
+
+      #otherButtons {
+         flex: 0.4;
+      }
+      
+       
+   }

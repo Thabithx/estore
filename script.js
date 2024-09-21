@@ -1,26 +1,35 @@
 class MyHeader extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
-      <div id="header">
-         <a href="homepage.html" id="logoDiv" class="headerSection">
-            <img src="images/logo.png" alt="site-logo">
-         </a>
-         <div id="searchDiv" class="headerSection">
-            <div id="backgroundDiv">
-               <input type="text" id="searchBox" placeholder="Search for products..." >
-               <button id="submitButton" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+      <div id="headerAndMobileSearch">
+         <div id="header">
+            <a href="homepage.html" id="logoDiv" class="headerSection">
+               <img src="images/logo.png" alt="site-logo">
+            </a>
+            <div id="searchDiv" class="headerSection">
+                <div id="backgroundDiv">
+                  <input type="text" id="searchBox" placeholder="Search for products..." >
+                  <button id="submitButton" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+               </div>
+            </div>
+            <div id="otherButtons">
+               <div id="accountDiv" onclick=showAccount() class="headerSection">
+                  <i class="fa-solid fa-user" style="color: #000000;"></i>
+               </div>
+               <div id="cartDiv" class="headerSection">
+                  <a href="cart-page.html"><i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></a>
+               
+               </div>
+               <div id="menuDiv" onclick=showMenu() class="headerSection">
+                  <i class="fa-solid fa-bars" style="color: #000000;"></i>
+               </div>
             </div>
          </div>
-         <div id="otherButtons">
-            <div id="accountDiv" onclick=showAccount() class="headerSection">
-               <i class="fa-solid fa-user" style="color: #000000;"></i>
-            </div>
-            <div id="cartDiv" class="headerSection">
-               <a href="cart-page.html"><i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></a>
-               
-            </div>
-            <div id="menuDiv" onclick=showMenu() class="headerSection">
-               <i class="fa-solid fa-bars" style="color: #000000;"></i>
+         <div id="mobileSearchBarDiv">
+            <div id="backgroundDiv">
+                  <input type="text" id="searchBox" placeholder="Search for products..." >
+                  <button id="submitButton" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+               </div>
             </div>
          </div>
       </div>
