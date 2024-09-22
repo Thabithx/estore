@@ -35,6 +35,10 @@ body {
    
 }
 
+#mobileSearchBarDiv{
+   display: none;
+}
+
 #backgroundDiv {
    flex: 1;
    background-color: white;
@@ -919,6 +923,7 @@ a {
 
       #mobileSearchBarDiv{
          padding: 5px 10px;
+         display: flex;
       }
 
       #headerAndMobileSearch{
@@ -945,6 +950,30 @@ a {
       #otherButtons {
          flex: 0.4;
       }
+
+
+      #featuresDiv{
+         display: none;
+      }
       
+      #productDiv{
+         margin-top: 30px;
+      }
        
+      #categoryText{
+         font-size: 17px;
+      }
+
+      .next {
+         top: 20%;
+      }
+      
+      .prev {
+
+         top: 20%;
+      }
+   }
+
+   @media (max-width: 440px){
+
    }
